@@ -69,7 +69,7 @@ docker run -p 8000:8000 recipe-manager
 ```bash
 curl -X POST http://localhost:8000/api/login/ \
      -H "Content-Type: application/json" \
-     -d '{"username": "your_username", "password": "your_password"}'
+     -d '{"username": "admin", "admin": "your_password"}'
 ```
 
 2. Use the token in GraphQL requests:
@@ -113,5 +113,7 @@ mutation {
 ```
 
 ## License
+
+Only Tests and code cleaning things done by the ChatGPT 
 
 MIT 
