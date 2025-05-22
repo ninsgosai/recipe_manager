@@ -1,0 +1,8 @@
+Django==5.0.2
+djangorestframework==3.14.0
+strawberry-graphql[django]==0.219.0
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+django-cors-headers==4.3.1
+djangorestframework-simplejwt==5.3.1
+drf-yasg==1.21.7 

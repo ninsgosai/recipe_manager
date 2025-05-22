@@ -1,0 +1,585 @@
+INFO 2025-05-22 18:01:07,614 views GraphQL Response: {
+  "data": {
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Tomato 1",
+        "unit": "15"
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:01:09,664 views GraphQL Response: {
+  "data": {
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Tomato receip",
+        "description": "string",
+        "ingredientCount": 0,
+        "ingredients": []
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:01:11,736 views GraphQL Response: {
+  "data": {
+    "addIngredientToRecipe": {
+      "id": 7,
+      "quantity": 2.0,
+      "ingredient": {
+        "id": 1,
+        "name": "Tomato 1"
+      },
+      "recipe": {
+        "id": 1,
+        "name": "Tomato receip"
+      }
+    }
+  }
+}
+INFO 2025-05-22 18:01:13,801 views GraphQL Response: {
+  "data": {
+    "removeIngredientFromRecipe": true
+  }
+}
+INFO 2025-05-22 18:06:15,575 views GraphQL Response: {
+  "data": {
+    "ingredients": [
+      {
+        "id": 1,
+        "name": "Tomato 1",
+        "unit": "15"
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:06:17,636 views GraphQL Response: {
+  "data": {
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Tomato receip",
+        "description": "string",
+        "ingredientCount": 0,
+        "ingredients": []
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:06:19,716 views GraphQL Response: {
+  "data": {
+    "addIngredientToRecipe": {
+      "id": 8,
+      "quantity": 2.0,
+      "ingredient": {
+        "id": 1,
+        "name": "Tomato 1"
+      },
+      "recipe": {
+        "id": 1,
+        "name": "Tomato receip"
+      }
+    }
+  }
+}
+INFO 2025-05-22 18:06:21,774 views GraphQL Response: {
+  "data": {
+    "removeIngredientFromRecipe": true
+  }
+}
+INFO 2025-05-22 18:11:20,062 views GraphQL Response: {
+  "data": {
+    "createIngredient": {
+      "id": 2,
+      "name": "Salt",
+      "unit": "g"
+    }
+  }
+}
+INFO 2025-05-22 18:11:22,105 views GraphQL Response: {
+  "data": {
+    "ingredients": [
+      {
+        "id": 2,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 1,
+        "name": "Tomato 1",
+        "unit": "15"
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:11:24,149 views GraphQL Response: {
+  "data": null,
+  "errors": [
+    {
+      "message": "'NoneType' object has no attribute 'context'",
+      "locations": [
+        {
+          "line": 3,
+          "column": 3
+        }
+      ],
+      "path": [
+        "createRecipe"
+      ]
+    }
+  ]
+}
+INFO 2025-05-22 18:11:26,189 views GraphQL Response: {
+  "data": {
+    "recipes": []
+  }
+}
+INFO 2025-05-22 18:11:28,253 views GraphQL Response: {
+  "data": {
+    "updateRecipe": {
+      "id": 1,
+      "name": "Updated Salad",
+      "description": "An updated salad recipe",
+      "ingredientCount": 2,
+      "ingredients": [
+        {
+          "id": 9,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 1,
+            "name": "Tomato 1"
+          }
+        },
+        {
+          "id": 10,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 2,
+            "name": "Salt"
+          }
+        }
+      ]
+    }
+  }
+}
+INFO 2025-05-22 18:11:30,318 views GraphQL Response: {
+  "data": {
+    "addIngredientToRecipe": {
+      "id": 9,
+      "quantity": 2.0,
+      "ingredient": {
+        "id": 1,
+        "name": "Tomato 1"
+      },
+      "recipe": {
+        "id": 1,
+        "name": "Updated Salad"
+      }
+    }
+  }
+}
+INFO 2025-05-22 18:11:32,382 views GraphQL Response: {
+  "data": {
+    "removeIngredientFromRecipe": true
+  }
+}
+INFO 2025-05-22 18:12:36,364 views GraphQL Response: {
+  "data": {
+    "createIngredient": {
+      "id": 3,
+      "name": "Salt",
+      "unit": "g"
+    }
+  }
+}
+INFO 2025-05-22 18:12:38,404 views GraphQL Response: {
+  "data": {
+    "ingredients": [
+      {
+        "id": 2,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 1,
+        "name": "Tomato 1",
+        "unit": "15"
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:12:40,457 views GraphQL Response: {
+  "data": null,
+  "errors": [
+    {
+      "message": "Cannot assign \"<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x00000155738845D0>>\": \"Recipe.created_by\" must be a \"User\" instance.",
+      "locations": [
+        {
+          "line": 3,
+          "column": 3
+        }
+      ],
+      "path": [
+        "createRecipe"
+      ]
+    }
+  ]
+}
+INFO 2025-05-22 18:12:42,508 views GraphQL Response: {
+  "data": null,
+  "errors": [
+    {
+      "message": "Cannot find 'ingredient' on Ingredient object, 'ingredients__ingredient' is an invalid parameter to prefetch_related()",
+      "locations": [
+        {
+          "line": 3,
+          "column": 3
+        }
+      ],
+      "path": [
+        "recipes"
+      ]
+    }
+  ]
+}
+INFO 2025-05-22 18:12:44,602 views GraphQL Response: {
+  "data": {
+    "updateRecipe": {
+      "id": 1,
+      "name": "Updated Salad",
+      "description": "An updated salad recipe",
+      "ingredientCount": 2,
+      "ingredients": [
+        {
+          "id": 11,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 1,
+            "name": "Tomato 1"
+          }
+        },
+        {
+          "id": 12,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 2,
+            "name": "Salt"
+          }
+        }
+      ]
+    }
+  }
+}
+INFO 2025-05-22 18:12:46,657 views GraphQL Response: {
+  "data": {
+    "addIngredientToRecipe": {
+      "id": 11,
+      "quantity": 2.0,
+      "ingredient": {
+        "id": 1,
+        "name": "Tomato 1"
+      },
+      "recipe": {
+        "id": 1,
+        "name": "Updated Salad"
+      }
+    }
+  }
+}
+INFO 2025-05-22 18:12:48,717 views GraphQL Response: {
+  "data": {
+    "removeIngredientFromRecipe": true
+  }
+}
+INFO 2025-05-22 18:13:29,081 views GraphQL Response: {
+  "data": {
+    "createIngredient": {
+      "id": 4,
+      "name": "Salt",
+      "unit": "g"
+    }
+  }
+}
+INFO 2025-05-22 18:13:31,139 views GraphQL Response: {
+  "data": {
+    "ingredients": [
+      {
+        "id": 2,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 4,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 1,
+        "name": "Tomato 1",
+        "unit": "15"
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:13:33,215 views GraphQL Response: {
+  "data": null,
+  "errors": [
+    {
+      "message": "Cannot assign \"<SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x000001AA00E41E90>>\": \"Recipe.created_by\" must be a \"User\" instance.",
+      "locations": [
+        {
+          "line": 3,
+          "column": 3
+        }
+      ],
+      "path": [
+        "createRecipe"
+      ]
+    }
+  ]
+}
+INFO 2025-05-22 18:13:35,271 views GraphQL Response: {
+  "data": {
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Updated Salad",
+        "description": "An updated salad recipe",
+        "ingredientCount": 1,
+        "ingredients": [
+          {
+            "id": 12,
+            "quantity": 1.0,
+            "ingredient": {
+              "id": 2,
+              "name": "Salt"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:13:37,378 views GraphQL Response: {
+  "data": {
+    "updateRecipe": {
+      "id": 1,
+      "name": "Updated Salad",
+      "description": "An updated salad recipe",
+      "ingredientCount": 2,
+      "ingredients": [
+        {
+          "id": 13,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 1,
+            "name": "Tomato 1"
+          }
+        },
+        {
+          "id": 14,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 2,
+            "name": "Salt"
+          }
+        }
+      ]
+    }
+  }
+}
+INFO 2025-05-22 18:13:39,434 views GraphQL Response: {
+  "data": {
+    "addIngredientToRecipe": {
+      "id": 13,
+      "quantity": 2.0,
+      "ingredient": {
+        "id": 1,
+        "name": "Tomato 1"
+      },
+      "recipe": {
+        "id": 1,
+        "name": "Updated Salad"
+      }
+    }
+  }
+}
+INFO 2025-05-22 18:13:41,483 views GraphQL Response: {
+  "data": {
+    "removeIngredientFromRecipe": true
+  }
+}
+INFO 2025-05-22 18:14:56,377 views GraphQL Response: {
+  "data": {
+    "createIngredient": {
+      "id": 5,
+      "name": "Salt",
+      "unit": "g"
+    }
+  }
+}
+INFO 2025-05-22 18:14:58,428 views GraphQL Response: {
+  "data": {
+    "ingredients": [
+      {
+        "id": 2,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 3,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 4,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 5,
+        "name": "Salt",
+        "unit": "g"
+      },
+      {
+        "id": 1,
+        "name": "Tomato 1",
+        "unit": "15"
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:15:00,520 views GraphQL Response: {
+  "data": {
+    "createRecipe": {
+      "id": 2,
+      "name": "Simple Salad",
+      "description": "A simple salad recipe",
+      "ingredientCount": 2,
+      "ingredients": [
+        {
+          "id": 15,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 1,
+            "name": "Tomato 1"
+          }
+        },
+        {
+          "id": 16,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 2,
+            "name": "Salt"
+          }
+        }
+      ]
+    }
+  }
+}
+INFO 2025-05-22 18:15:02,577 views GraphQL Response: {
+  "data": {
+    "recipes": [
+      {
+        "id": 2,
+        "name": "Simple Salad",
+        "description": "A simple salad recipe",
+        "ingredientCount": 2,
+        "ingredients": [
+          {
+            "id": 15,
+            "quantity": 1.0,
+            "ingredient": {
+              "id": 1,
+              "name": "Tomato 1"
+            }
+          },
+          {
+            "id": 16,
+            "quantity": 1.0,
+            "ingredient": {
+              "id": 2,
+              "name": "Salt"
+            }
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "Updated Salad",
+        "description": "An updated salad recipe",
+        "ingredientCount": 1,
+        "ingredients": [
+          {
+            "id": 14,
+            "quantity": 1.0,
+            "ingredient": {
+              "id": 2,
+              "name": "Salt"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+INFO 2025-05-22 18:15:04,656 views GraphQL Response: {
+  "data": {
+    "updateRecipe": {
+      "id": 1,
+      "name": "Updated Salad",
+      "description": "An updated salad recipe",
+      "ingredientCount": 2,
+      "ingredients": [
+        {
+          "id": 17,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 1,
+            "name": "Tomato 1"
+          }
+        },
+        {
+          "id": 18,
+          "quantity": 1.0,
+          "ingredient": {
+            "id": 2,
+            "name": "Salt"
+          }
+        }
+      ]
+    }
+  }
+}
+INFO 2025-05-22 18:15:06,731 views GraphQL Response: {
+  "data": {
+    "addIngredientToRecipe": {
+      "id": 17,
+      "quantity": 2.0,
+      "ingredient": {
+        "id": 1,
+        "name": "Tomato 1"
+      },
+      "recipe": {
+        "id": 1,
+        "name": "Updated Salad"
+      }
+    }
+  }
+}
+INFO 2025-05-22 18:15:08,784 views GraphQL Response: {
+  "data": {
+    "removeIngredientFromRecipe": true
+  }
+}
