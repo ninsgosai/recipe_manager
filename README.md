@@ -18,7 +18,7 @@ A Django-based recipe management application with GraphQL API support.
 1. Create a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+venv\Scripts\activate
 ```
 
 2. Install dependencies:
@@ -69,7 +69,7 @@ docker run -p 8000:8000 recipe-manager
 ```bash
 curl -X POST http://localhost:8000/api/login/ \
      -H "Content-Type: application/json" \
-     -d '{"username": "admin", "admin": "your_password"}'
+     -d '{"username": "admin", "password": "admin"}'
 ```
 
 2. Use the token in GraphQL requests:
@@ -112,8 +112,8 @@ mutation {
 }
 ```
 
+====================================================================================
+1. To run the graphql without UI and Postman I have added 1 run_graphql_queries.py File so you can Run that file too.
 ## License
 
 Only Tests and code cleaning things done by the ChatGPT 
-
-MIT 
